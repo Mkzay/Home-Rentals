@@ -13,7 +13,7 @@ const Body = () => {
           />
         </div>
         <div className="flex items-center justify-center lg:justify-normal lg:items-start px-10 lg:px-0 lg:flex-col lg:gap-20">
-          <div className="flex flex-col lg:flex-row text-base lg:text-2xl font-semibold gap-5">
+          <div className="flex flex-col lg:flex-row text-base lg:text-2xl font-semibold gap-10 lg:gap-5">
             <div>
               <div className="w-[77px] h-[77px] bg-white shadow-xl flex items-center justify-center mb-4">
                 <img src="/icon1.png" alt="icon1" />
@@ -39,7 +39,7 @@ const Body = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row text-base lg:text-2xl font-semibold gap-5">
+          <div className="flex flex-col lg:flex-row text-base lg:text-2xl font-semibold gap-10 lg:gap-5">
             <div>
               <div className="w-[77px] h-[77px] bg-white shadow-xl flex items-center justify-center mb-4">
                 <img src="/icon4.png" alt="icon4" />

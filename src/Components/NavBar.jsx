@@ -1,6 +1,6 @@
 const NavBar = () => {
   return (
-    <div className="items-center justify-between gap-64 mt-8 px-32 absolute right-0 left-0 lg:flex">
+    <div className="items-center justify-between lg:gap-64 mt-8 px-2 lg:px-32 absolute right-0 left-0 flex">
       <div>
         <img src="/logo.svg" alt="logo" />
       </div>
@@ -21,6 +21,7 @@ const NavBar = () => {
           <a className="cursor-pointer">Contact Us</a>
         </li>
       </ul>
+      <button className="bg-white text-black font-semibold px-5 py-1 rounded-lg lg:hidden">Menu</button>
     </div>
   );
 };

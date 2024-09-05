@@ -1,3 +1,5 @@
+import { faBed, faShower, faTableCellsLarge } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 
 const Listings = () => {
@@ -82,9 +84,18 @@ const Listings = () => {
                     </p>
                   </div>
                   <div className="text-sm font-bold flex justify-between lg:text-base border-t pt-2">
-                    <p>{property.bedrooms}</p>
-                    <p>{property.bathrooms}</p>
-                    <p>{property.squareFootage}</p>
+                    <p className="flex items-center gap-2">
+                      <FontAwesomeIcon icon={faBed} />
+                      {property.bedrooms}
+                    </p>
+                    <p className="flex items-center gap-2">
+                      <FontAwesomeIcon icon={faShower} />
+                      {property.bathrooms}
+                    </p>
+                    <p className="flex items-center gap-2">
+                      <FontAwesomeIcon icon={faTableCellsLarge} />
+                      {property.squareFootage}
+                    </p>
                   </div>
                 </div>
               </li>

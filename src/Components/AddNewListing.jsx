@@ -61,6 +61,7 @@ const AddNewListing = ({ addListing }) => {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder="Enter Name"
+                required
               />
             </label>
             <label className="flex flex-col">
@@ -72,6 +73,7 @@ const AddNewListing = ({ addListing }) => {
                 value={formData.address}
                 onChange={handleChange}
                 placeholder="Enter Address"
+                required
               />
             </label>
             <label className="flex flex-col">
@@ -94,13 +96,14 @@ const AddNewListing = ({ addListing }) => {
                 name="city"
                 value={formData.city}
                 onChange={handleChange}
+                required
               >
                 <option value="" disabled>
                   Select City
                 </option>
-                <option value="city1">City 1</option>
-                <option value="city2">City 2</option>
-                <option value="city3">City 3</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
               </select>
             </label>
             <label className="flex flex-col">
@@ -110,13 +113,14 @@ const AddNewListing = ({ addListing }) => {
                 name="state"
                 value={formData.state}
                 onChange={handleChange}
+                required
               >
                 <option value="" disabled>
                   Select State
                 </option>
-                <option value="state1">State 1</option>
-                <option value="state2">State 2</option>
-                <option value="state3">State 3</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
               </select>
             </label>
             <label className="flex flex-col">
@@ -126,13 +130,14 @@ const AddNewListing = ({ addListing }) => {
                 name="roomType"
                 value={formData.roomType}
                 onChange={handleChange}
+                required
               >
                 <option value="" disabled>
                   Select Room Type
                 </option>
-                <option value="type1">Type 1</option>
-                <option value="type2">Type 2</option>
-                <option value="type3">Type 3</option>
+                <option value="Single Family">Single Family</option>
+                <option value="Apartment">Apartment</option>
+                <option value="Condo">Condo</option>
               </select>
             </label>
           </div>
@@ -143,6 +148,7 @@ const AddNewListing = ({ addListing }) => {
                 className="border-fbd border p-2 placeholder:text-fph placeholder:text-base bg-[#F9F9F9] lg:w-80"
                 type="text"
                 name="price"
+                required
                 value={formData.price}
                 onChange={handleChange}
                 placeholder="Enter Price"
@@ -153,15 +159,16 @@ const AddNewListing = ({ addListing }) => {
               <select
                 className="border-fbd border p-2 placeholder:text-fph placeholder:text-base bg-[#F9F9F9] lg:w-80"
                 name="floorCount"
+                required
                 value={formData.floorCount}
                 onChange={handleChange}
               >
                 <option value="" disabled>
                   Select Floor Count
                 </option>
-                <option value="1">1 Floor</option>
-                <option value="2">2 Floors</option>
-                <option value="3">3 Floors</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
               </select>
             </label>
           </div>
@@ -181,6 +188,7 @@ const AddNewListing = ({ addListing }) => {
               type="file"
               name="photos"
               onChange={handleChange}
+              required
             />
           </label>
           <div className="flex items-center justify-center">

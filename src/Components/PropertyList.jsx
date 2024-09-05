@@ -1,8 +1,15 @@
 /* eslint-disable react/prop-types */
 // eslint-disable-next-line react/prop-types
+import {
+  faBed,
+  faShower,
+  faTableCellsLarge,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const PropertyList = ({ listings }) => {
   return (
-    <div className="flex items-center justify-center flex-col py-28">
+    <div className="flex items-center justify-center flex-col py-20 gap-10">
       <h3 className="text-center text-lg text-[#F4511E] font-extrabold lg:text-4xl mb-5">
         Property Listings
       </h3>
@@ -11,25 +18,39 @@ const PropertyList = ({ listings }) => {
         listings.map((listing, index) => (
           <div
             key={index}
-            className="bg-white shadow-xl rounded-3xl mb-5 w-11/12"
+            className="bg-white shadow-xl rounded-3xl mb-5 w-11/12 lg:w-3/12 lg:h-[400px] flex gap-5 flex-col"
           >
             {listing.photos && (
               <img
                 src={URL.createObjectURL(listing.photos)}
                 alt={listing.name}
-                className="rounded-t-3xl"
+                className="rounded-t-3xl lg:h-[200px] lg:w-full"
               />
             )}
 
-            <p className="text-black font-bold text-xl">{listing.address}</p>
-            <p className="text-[#F4511E] font-bold text-xl">
-              {listing.price}/Month
-            </p>
-            <p>{listing.floorCount}</p>
-            <p>
-              {listing.city}, {listing.state}
-            </p>
-            <p>{listing.roomType}</p>
+            <div className="px-5 flex flex-col justify-between gap-2">
+              <p className="text-xl font-bold tracking-[-0.64px] lg:text-xl">
+                {listing.address}
+              </p>
+              <p className="lg:text-base text-[#818181] ">{listing.roomType}</p>
+              <p className="text-xl text-[#F4511E] font-bold tracking-[-0.64px] lg:text-xl">
+                {listing.price}/Month
+              </p>
+              <div className="text-sm font-bold flex justify-between lg:text-base border-t pt-3">
+                <p className="flex items-center gap-2">
+                  <FontAwesomeIcon icon={faBed} />
+                  {listing.state}
+                </p>
+                <p className="flex items-center gap-2">
+                  <FontAwesomeIcon icon={faShower} />
+                  {listing.city}
+                </p>
+                <p className="flex items-center gap-2">
+                  <FontAwesomeIcon icon={faTableCellsLarge} />
+                  {listing.floorCount}
+                </p>
+              </div>
+            </div>
           </div>
         ))
       ) : (

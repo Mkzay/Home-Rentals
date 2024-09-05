@@ -70,7 +70,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row lg:justify-between w-full border-t border-[#7BB9FC] pt-5">
-        <ul className="flex flex-col items-center gap-4 pb-4 lg:flex-row">
+        <ul className="flex flex-col items-center md:justify-center gap-4 pb-4 md:flex-row md:gap-10">
           <li>About us</li>
           <li>Contact us</li>
           <li>Help</li>

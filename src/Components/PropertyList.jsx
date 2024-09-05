@@ -2,7 +2,7 @@
 // eslint-disable-next-line react/prop-types
 const PropertyList = ({ listings }) => {
   return (
-    <div className="property-list flex items-center justify-center flex-col">
+    <div className="flex items-center justify-center flex-col py-28">
       <h3 className="text-center text-lg text-[#F4511E] font-extrabold lg:text-4xl mb-5">
         Property Listings
       </h3>

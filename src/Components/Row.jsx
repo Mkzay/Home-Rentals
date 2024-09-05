@@ -1,6 +1,6 @@
 const Row = () => {
   return (
-    <div className="flex flex-col my-10 font-inter items-center justify-center gap-10 lg:flex-row">
+    <div className="flex flex-col my-10 font-inter items-center justify-center gap-10 pt-11 lg:flex-row">
       <div className="flex flex-col gap-2 lg:gap-4 w-5/12 lg:w-fit">
         <div className="flex gap-2 lg:gap-4 items-baseline justify-center">
           <img src="flexible.png" alt="image 6" />

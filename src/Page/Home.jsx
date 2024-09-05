@@ -1,6 +1,7 @@
 import Body from "../Components/Body";
 import Main from "../Components/Main";
 import Listings from "../Components/Listings";
+import PropertyList from "../Components/PropertyList";
 import Row from "../Components/Row";
 import AddNewListing from "../Components/AddNewListing";
 import Footer from "../Components/Footer";
@@ -17,8 +18,8 @@ const Home = () => {
     <div>
       <Main />
       <Body />
-      {/*<PropertyList listings={listings} />*/}
       <Listings />
+      <PropertyList listings={listings} />
       <Row />
       <AddNewListing addListing={addNewListing} />
       <Testimony />

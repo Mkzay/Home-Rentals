@@ -9,8 +9,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const PropertyList = ({ listings }) => {
   return (
-    <div className="flex items-center justify-center flex-col py-20 gap-10">
-      <h3 className="text-center text-lg text-[#F4511E] font-extrabold lg:text-4xl mb-5">
+    <div className="flex items-center justify-center flex-col py-20 gap-6">
+      <h3 className="text-center text-2xl text-[#F4511E] font-extrabold lg:text-4xl mb-5">
         Property Listings
       </h3>
       {listings.length > 0 ? (
@@ -18,7 +18,7 @@ const PropertyList = ({ listings }) => {
         listings.map((listing, index) => (
           <div
             key={index}
-            className="bg-white shadow-xl rounded-3xl mb-5 w-11/12 lg:w-3/12 lg:h-[400px] flex gap-5 flex-col"
+            className="bg-white shadow-xl rounded-3xl mb-5 w-11/12 pb-5 lg:w-3/12 lg:h-[400px] flex gap-5 flex-col"
           >
             {listing.photos && (
               <img

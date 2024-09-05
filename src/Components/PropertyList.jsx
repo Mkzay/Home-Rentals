@@ -18,7 +18,7 @@ const PropertyList = ({ listings }) => {
         listings.map((listing, index) => (
           <div
             key={index}
-            className="bg-white shadow-xl rounded-3xl mb-5 w-11/12 pb-5 lg:w-3/12 lg:h-[400px] flex gap-5 flex-col"
+            className="bg-white shadow-xl rounded-3xl mb-5 w-11/12 pb-5 md:w-7/12 lg:w-3/12 lg:h-[400px] flex gap-5 flex-col"
           >
             {listing.photos && (
               <img
